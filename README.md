@@ -1,50 +1,81 @@
-# React + TypeScript + Vite
+# ✨ Modern Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beautiful and modern Todo application built with React, featuring a stunning UI, smooth animations, and dark/light mode support.
 
-Currently, two official plugins are available:
+![Todo App Screenshot](screenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- ✅ **Beautiful Modern UI** with smooth animations and transitions
+- 🌓 **Dark/Light Mode** with system preference detection
+- 🎯 **Filter Tasks** by all, active, or completed
+- ✏️ **Edit Tasks** inline with smooth transitions
+- 🗑️ **Delete Tasks** with satisfying animations
+- 💾 **Persistent Storage** using localStorage
+- 📱 **Fully Responsive** design
+- ⌨️ **Keyboard Support** for quick task addition
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🛠️ Built With
 
-- Configure the top-level `parserOptions` property like this:
+- [React](https://reactjs.org/) - UI Framework
+- [Framer Motion](https://www.framer.com/motion/) - Animation Library
+- [TailwindCSS](https://tailwindcss.com/) - Styling
+- [Lucide Icons](https://lucide.dev/) - Beautiful Icons
+- TypeScript - Type Safety
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🏃‍♂️ Getting Started
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. Clone the repository:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+   ```bash
+   git clone https://github.com/yourusername/cursor-todo.git
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+2. Install dependencies:
+
+   ```bash
+   cd cursor-todo
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:5173](http://localhost:5173) in your browser
+
+## 🎨 Features in Detail
+
+### Task Management
+
+- Add new tasks with the input field
+- Mark tasks as completed with a beautiful checkbox animation
+- Edit existing tasks by clicking the edit icon
+- Delete tasks with a smooth exit animation
+
+### Filtering
+
+- View all tasks
+- Filter to show only active tasks
+- Filter to show only completed tasks
+- Persistent filter selection
+
+### Theme Support
+
+- Automatic system theme detection
+- Manual theme toggle with beautiful animation
+- Consistent design in both dark and light modes
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/cursor-todo/issues).
+
+## 💖 Show your support
+
+Give a ⭐️ if you like this project!
